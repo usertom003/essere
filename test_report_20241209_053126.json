@@ -1,0 +1,62 @@
+{
+  "timestamp": "2024-12-09T05:31:24.669820",
+  "results": {
+    "total": 22,
+    "passed": 10,
+    "failed": 2,
+    "errors": 10,
+    "skipped": 0
+  },
+  "failures": [
+    {
+      "test": "test_invalid_features (test_ml_models.TestEmotionClassifier.test_invalid_features)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_ml_models.py\", line 32, in test_invalid_features\n    with self.assertRaises(ValueError):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ValueError not raised\n"
+    },
+    {
+      "test": "test_prediction (test_ml_models.TestEmotionClassifier.test_prediction)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_ml_models.py\", line 27, in test_prediction\n    self.assertIn(emotion, ['neutral', 'happy', 'sad', 'angry', 'fearful', 'disgusted', 'surprised'])\nAssertionError: {'neutral': 0.0, 'happy': 0.0, 'sad': 0.0, 'angry': 0.0, 'fearful': 0.0, 'disgusted': 0.0, 'surprised': 0.0} not found in ['neutral', 'happy', 'sad', 'angry', 'fearful', 'disgusted', 'surprised']\n"
+    }
+  ],
+  "errors": [
+    {
+      "test": "test_balance_score (test_body_analysis.TestPoseAnalyzer.test_balance_score)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_body_analysis.py\", line 45, in test_balance_score\n    score = self.analyzer._calculate_balance_score(landmarks)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PoseAnalyzer' object has no attribute '_calculate_balance_score'. Did you mean: 'calculate_balance_score'?\n"
+    },
+    {
+      "test": "test_invalid_landmarks (test_body_analysis.TestPoseAnalyzer.test_invalid_landmarks)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_body_analysis.py\", line 52, in test_invalid_landmarks\n    score = self.analyzer._calculate_balance_score(invalid_landmarks)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PoseAnalyzer' object has no attribute '_calculate_balance_score'. Did you mean: 'calculate_balance_score'?\n"
+    },
+    {
+      "test": "test_joint_angles_calculation (test_body_analysis.TestPoseAnalyzer.test_joint_angles_calculation)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_body_analysis.py\", line 30, in test_joint_angles_calculation\n    angle = self.analyzer._calculate_joint_angle(p1, p2, p3)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PoseAnalyzer' object has no attribute '_calculate_joint_angle'. Did you mean: 'calculate_joint_angles'?\n"
+    },
+    {
+      "test": "test_movement_analysis (test_body_analysis.TestPoseAnalyzer.test_movement_analysis)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_body_analysis.py\", line 38, in test_movement_analysis\n    movement = self.analyzer.analyze_movement(sequence)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PoseAnalyzer' object has no attribute 'analyze_movement'\n"
+    },
+    {
+      "test": "test_data_processing (unittest.loader._FailedTest.test_data_processing)",
+      "message": "ImportError: Failed to import test module: test_data_processing\nTraceback (most recent call last):\n  File \"C:\\Python312\\Lib\\unittest\\loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python312\\Lib\\unittest\\loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_data_processing.py\", line 13, in <module>\n    from data_processing.data_analyzer import DataAnalyzer\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\src\\data_processing\\data_analyzer.py\", line 82\n    trends[f'pupil_{col}_trend'] = self._calculate_trend(pip install tensorflow==2.15.0\n                                                         ^^^^^^^^^^^\nSyntaxError: invalid syntax. Perhaps you forgot a comma?\n\n"
+    },
+    {
+      "test": "test_invalid_eye_region (test_facial_analysis.TestPupilAnalyzer.test_invalid_eye_region)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_facial_analysis.py\", line 59, in test_invalid_eye_region\n    size = self.analyzer.measure_pupil_size(invalid_eye)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PupilAnalyzer' object has no attribute 'measure_pupil_size'\n"
+    },
+    {
+      "test": "test_pupil_detection (test_facial_analysis.TestPupilAnalyzer.test_pupil_detection)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_facial_analysis.py\", line 53, in test_pupil_detection\n    size = self.analyzer.measure_pupil_size(left_eye)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PupilAnalyzer' object has no attribute 'measure_pupil_size'\n"
+    },
+    {
+      "test": "test_invalid_sequence (test_ml_models.TestMovementClassifier.test_invalid_sequence)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_ml_models.py\", line 59, in test_invalid_sequence\n    self.classifier.predict(invalid_sequence)\n    ^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'MovementClassifier' object has no attribute 'predict'\n"
+    },
+    {
+      "test": "test_prediction (test_ml_models.TestMovementClassifier.test_prediction)",
+      "message": "Traceback (most recent call last):\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_ml_models.py\", line 52, in test_prediction\n    movement = self.classifier.predict(sequence)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'MovementClassifier' object has no attribute 'predict'\n"
+    },
+    {
+      "test": "test_system_integration (unittest.loader._FailedTest.test_system_integration)",
+      "message": "ImportError: Failed to import test module: test_system_integration\nTraceback (most recent call last):\n  File \"C:\\Python312\\Lib\\unittest\\loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python312\\Lib\\unittest\\loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\tests\\test_system_integration.py\", line 19, in <module>\n    from data_processing.data_analyzer import DataAnalyzer\n  File \"c:\\mentalprogectcomplete\\aio\\Nuova cartella\\lio\\src\\data_processing\\data_analyzer.py\", line 82\n    trends[f'pupil_{col}_trend'] = self._calculate_trend(pip install tensorflow==2.15.0\n                                                         ^^^^^^^^^^^\nSyntaxError: invalid syntax. Perhaps you forgot a comma?\n\n"
+    }
+  ]
+}

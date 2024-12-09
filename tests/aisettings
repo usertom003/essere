@@ -1,0 +1,51 @@
+# Test Configuration Settings
+
+# Frame dimensions
+TEST_FRAME_WIDTH = 640
+TEST_FRAME_HEIGHT = 480
+TEST_FRAME_CHANNELS = 3
+
+# Test data parameters
+TEST_SEQUENCE_LENGTH = 100
+TEST_FEATURE_DIMENSION = 7
+TEST_BATCH_SIZE = 32
+
+# Performance thresholds
+MIN_FPS = 10
+MAX_EXECUTION_TIME = 30  # seconds
+MAX_MEMORY_USAGE = 1000  # MB
+MAX_ERROR_RATE = 0.01
+
+# Model confidence thresholds
+MIN_CONFIDENCE_THRESHOLD = 0.6
+MAX_CONFIDENCE_THRESHOLD = 1.0
+
+# Test data generation settings
+RANDOM_SEED = 42
+TEST_FRAMES_COUNT = 100
+
+# Component health check settings
+HEALTH_CHECK_INTERVAL = 5  # seconds
+MAX_ERROR_COUNT = 3
+AUTO_RECOVERY_ATTEMPTS = 2
+
+# Logging configuration
+LOG_LEVEL = "INFO"
+LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Test timeouts
+COMPONENT_TIMEOUT = 10  # seconds
+PIPELINE_TIMEOUT = 30  # seconds
+
+# Resource limits
+MAX_CPU_USAGE = 80  # percent
+MAX_MEMORY_GROWTH = 20  # percent
+
+# Validation thresholds
+POSE_CONFIDENCE_THRESHOLD = 0.7
+EXPRESSION_CONFIDENCE_THRESHOLD = 0.8
+PUPIL_DETECTION_THRESHOLD = 0.75
+
+# Test data paths
+TEST_DATA_DIR = "tests/test_data"
+TEST_MODELS_DIR = "tests/test_models" 
